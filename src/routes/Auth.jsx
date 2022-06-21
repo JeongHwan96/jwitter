@@ -28,7 +28,6 @@ const Auth = () => {
       } else {
         data = await authService.signInWithEmailAndPassword(Email, Password);
       }
-      console.log(data);
     } catch (error) {
       setError(error.message);
     }
@@ -45,7 +44,6 @@ const Auth = () => {
       provider = new firsbaseInstance.auth.GithubAuthProvider();
     }
     const data = await authService.signInWithPopup(provider);
-    console.log(data);
   };
   return (
     <>

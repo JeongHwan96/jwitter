@@ -3,7 +3,8 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import "firebase/compat/storage";
 import "firebase/auth";
-import "firebase/database";
+import "firebase/firestore";
+import "firebase/storage";
 const firebaseConfig = {
   apiKey: "AIzaSyCExmOwOQ_yXr6f1vV2sEkBOvGes4w1o8Y",
   authDomain: "jwitter-3086a.firebaseapp.com",
@@ -16,3 +17,5 @@ const firebaseConfig = {
 export default firebase.initializeApp(firebaseConfig);
 export const firsbaseInstance = firebase;
 export const authService = firebase.auth();
+export const dbService = firebase.firestore();
+export const storageService = firebase.storage();

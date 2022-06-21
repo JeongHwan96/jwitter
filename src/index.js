@@ -4,7 +4,7 @@ import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 import firebase from "./firebase";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(firebase);
+
 root.render(<App />);
 
 reportWebVitals();

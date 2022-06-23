@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Navigation = () => {
+import { getAuth } from "firebase/auth";
+
+const auth = getAuth();
+const user = auth.currentUser;
+console.log(user);
+const Navigation = ({ userObj }) => {
   return (
     <>
       <nav>
@@ -9,7 +14,7 @@ const Navigation = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/profile">My Profile</Link>
+            <Link to="/profile">{user.displayName} Profile</Link>
           </li>
         </ul>
       </nav>

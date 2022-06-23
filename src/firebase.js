@@ -5,6 +5,7 @@ import "firebase/compat/storage";
 import "firebase/auth";
 import "firebase/firestore";
 import "firebase/storage";
+
 const firebaseConfig = {
   apiKey: "AIzaSyCExmOwOQ_yXr6f1vV2sEkBOvGes4w1o8Y",
   authDomain: "jwitter-3086a.firebaseapp.com",
